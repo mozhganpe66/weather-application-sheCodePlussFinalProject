@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/styles.css" rel="stylesheet" />
+    <title>My weather app</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="form">
+          <input
+            type="text"
+            placeholder="Enter a city"
+            class="search-form-input"
+            id="input"
+            required
+          />
+          <input type="submit" class="search-form-button" value="search" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="h1">Paris</h1>
+            <span class="weather-app-details" id="time"></span>
+              <span id="weather-condition"></span>
+              <br/>
+              Humidity: <strong id="humidity"></strong>, wind:
+              <strong id="wind"></strong>
+            </span>
+          </div>
+          <div class="weather-app-temperature" id="temperature"></div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by <a href="https://github.com/mozhganpe66" target="_blank">Mozhgan Pourabedin</a> , is
+        <a href="#">Open-source on github</a> and
+        <a href="#">hosted on netlify</a>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
